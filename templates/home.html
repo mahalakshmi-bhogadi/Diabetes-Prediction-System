@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        h1{
+            color:black;
+            font-family: arial, sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 200px;
+        }
+        body {
+            background-color:white;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        input[type=submit]{
+            background-color: #4dc3ff;
+            border: 2px;
+            color: white;
+            padding: 16px 32px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="f" align="center">
+     <h1>
+           WELCOME TO DIABETES PREDICTION SYSTEM
+       </h1>
+       <form align="center" action="predict">
+           <input type="submit" value="Let's get started">
+       </form>
+</div>
+<br><br>
+<div class="s">
+    <table>
+        <tr>
+            <td><img src = "{% static 'Diabetes/images/d1.jpg'%}" width="200px" height="150px"></td>
+            <td><img src = "{% static 'Diabetes/images/d2.jpg'%}" width="200px"></td>
+            <td><img src = "{% static 'Diabetes/images/d3.jpg'%}" width="300px"></td>
+            <td><img src = "{% static 'Diabetes/images/d4.jpg'%}" width="200px"></td>
+            <td><img src = "{% static 'Diabetes/images/d5.jpg'%}" width="150px"></td>
+            <td><img src = "{% static 'Diabetes/images/d7.jpg'%}" width="185px"></td>
+
+        </tr>
+    </table>
+</div>
+</body>
+</html>
